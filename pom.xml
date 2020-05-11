@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.jonashackt.lectures</groupId>
-	<artifactId>java1-examples</artifactId>
+	<artifactId>java2-examples</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<description>Example code showing things from the lecture in "real life"</description>
@@ -20,10 +20,7 @@
     </properties>
 	
 	<modules>
-        <module>03-sprachkonstrukte-1</module>
-        <module>05-klassen-vererbung</module>
-        <module>09-ood-patterns</module>
-		<module>10-java8</module>
+        <module>02-jdbc</module>
     </modules>
 
 	<dependencies>
