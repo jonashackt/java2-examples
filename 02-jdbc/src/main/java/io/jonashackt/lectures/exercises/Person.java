@@ -2,6 +2,15 @@ package io.jonashackt.lectures.exercises;
 
 public class Person implements Comparable<Person>{
     private final String firstName;
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String geteMail() {
+        return eMail;
+    }
+
     private final String lastName;
     private final String eMail;
 

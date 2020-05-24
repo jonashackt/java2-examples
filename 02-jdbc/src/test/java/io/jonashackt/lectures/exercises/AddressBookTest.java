@@ -1,7 +1,11 @@
 package io.jonashackt.lectures.exercises;
 
+import io.jonashackt.lectures.exercises.storage.AddressbookRepository;
+import io.jonashackt.lectures.exercises.storage.StorageError;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import java.sql.SQLException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -14,7 +18,7 @@ public class AddressBookTest {
     Person manfredHerold;
 
     @BeforeEach
-    void prepareAddressBook() {
+    void prepareAddressBook() throws SQLException {
         addressBook = new AddressBook();
         maxMustermann = new Person("Max", "Mustermann", "max.mustermann@email.de");
         emmaWeber = new Person("Emma", "Weber", "emma.mueller@post.de");
@@ -23,6 +27,18 @@ public class AddressBookTest {
         addressBook.addContact(maxMustermann);
         addressBook.addContact(emmaWeber);
         addressBook.addContact(manfredHerold);
+    }
+
+    @Test
+    void should_create_database_and_write_and_read_person() throws StorageError {
+        AddressbookRepository addressbookRepository = new AddressbookRepository();
+        addressbookRepository.createTable();
+        addressbookRepository.savePerson();
+        Person personFromDatabase = addressbookRepository.readPerson();
+
+        assertEquals("Max", personFromDatabase.getFirstName());
+        assertEquals("Meyer", personFromDatabase.getLastName());
+        assertEquals("max.meyer@web.de", personFromDatabase.geteMail());
     }
 
     @Test
