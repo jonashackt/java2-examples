@@ -19,7 +19,7 @@ public class AddressbookRepository {
     public AddressbookRepository() throws StorageError {
 
         try {
-            //Same as Connection connection = DriverManager.getConnection("jdbc:h2:mem:test");
+            //Same as Connection connection = DriverManager.getConnection("jdbc:h2:mem:" + databaseName);
             JdbcDataSource dataSource = new JdbcDataSource();
             dataSource.setURL("jdbc:h2:mem:" + databaseName);
             connection = dataSource.getConnection();
@@ -29,12 +29,14 @@ public class AddressbookRepository {
         }
     }
 
-    public void createTable() throws StorageError {
+    public void createTablePerson() throws StorageError {
         executeStatement(resourceFile2String("createTable.sql"));
     }
 
-    public void savePerson() throws StorageError {
-        executeStatement(resourceFile2String("insertPerson.sql"));
+    public void savePerson(Person person) throws StorageError {
+        String insertSql = "INSERT INTO PERSON (FIRST_NAME, LAST_NAME, EMAIL)\n" +
+                        "VALUES ('" + person.getFirstName() + "', '" + person.getLastName() + "', '" + person.geteMail() + "')";
+        executeStatement(insertSql);
     }
 
     public Person readPerson() throws StorageError {
