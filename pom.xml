@@ -21,6 +21,7 @@
 	
 	<modules>
         <module>02-jdbc</module>
+        <module>04-jpa</module>
     </modules>
 
 	<dependencies>
