@@ -1,6 +1,6 @@
 package io.jonashackt.lectures.exercises.storage;
 
-import io.jonashackt.lectures.exercises.Person;
+import io.jonashackt.lectures.exercises.domain.Person;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;

@@ -1,4 +1,4 @@
-package io.jonashackt.lectures.exercises;
+package io.jonashackt.lectures.exercises.domain;
 
 import javax.persistence.*;
 

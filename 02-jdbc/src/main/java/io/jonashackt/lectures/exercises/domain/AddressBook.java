@@ -1,4 +1,4 @@
-package io.jonashackt.lectures.exercises;
+package io.jonashackt.lectures.exercises.domain;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

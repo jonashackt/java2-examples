@@ -1,6 +1,6 @@
 package io.jonashackt.lectures.exercises.storage;
 
-import io.jonashackt.lectures.exercises.Person;
+import io.jonashackt.lectures.exercises.domain.Person;
 import org.h2.jdbcx.JdbcDataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

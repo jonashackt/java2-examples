@@ -1,5 +1,8 @@
 package io.jonashackt.lectures.exercises;
 
+import io.jonashackt.lectures.exercises.domain.AddressBook;
+import io.jonashackt.lectures.exercises.domain.Person;
+import io.jonashackt.lectures.exercises.domain.PersonNotFoundException;
 import io.jonashackt.lectures.exercises.storage.AddressbookRepository;
 import io.jonashackt.lectures.exercises.storage.StorageError;
 import org.junit.jupiter.api.BeforeEach;
