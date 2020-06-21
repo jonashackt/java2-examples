@@ -22,6 +22,7 @@
 	<modules>
         <module>02-jdbc</module>
         <module>04-jpa</module>
+		<module>05-jpa-with-spring</module>
     </modules>
 
 	<dependencies>
