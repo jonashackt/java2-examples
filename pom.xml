@@ -23,6 +23,7 @@
         <module>02-jdbc</module>
         <module>04-jpa</module>
 		<module>05-jpa-with-spring</module>
+		<module>06-spring-rest-jpa</module>
     </modules>
 
 	<dependencies>
