@@ -1,0 +1,1 @@
+web: java -Dserver.port=$PORT -jar 07-heroku/target/07-heroku-*.jar
