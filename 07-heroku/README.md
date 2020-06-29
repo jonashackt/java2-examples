@@ -11,6 +11,20 @@ See the docs:
 
 ### Howto:
 
+#### 0. Optional, falls ihr nicht JDK8 einsetzt
+
+Erstellt eine `system.properties` Datei (siehe https://devcenter.heroku.com/articles/customizing-the-jdk) mit euer Java-Version:
+
+```
+java.runtime.version=11
+```
+
+Sonst lauf ihr in folgenden Fehler auf Heroku:
+
+```
+       [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project 02-jdbc: Fatal error compiling: invalid target release: 11 -> [Help 1]
+```
+
 #### 1. Procfile anlegen im Repository
 
 In eurem Repository müsst ihr eine Konfigurationsdatei für Heroku anlegen, die `Procfile` heißt:
@@ -20,7 +34,6 @@ web: java -Dserver.port=$PORT -jar 07-heroku/target/07-heroku-1.0.0-SNAPSHOT.jar
 ```
 
 Wichtig ist der Pfad am Ende - verweisst da auf eure von Maven gebaute Spring Boot App, die als `.jar` Datei vorliegt.
-
 
 #### 2. Heroku CLI installieren 
 
