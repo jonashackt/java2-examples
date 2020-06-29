@@ -33,6 +33,13 @@
             <artifactId>h2</artifactId>
         </dependency>
 
+        <!-- PostgreSQL used in Staging and Production environment, e.g. on Heroku -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.14</version>
+        </dependency>
+
         <!-- springdoc-openapi (Springfox Swagger successor) for REST API live docs -->
         <dependency>
             <groupId>org.springdoc</groupId>
