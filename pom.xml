@@ -25,6 +25,7 @@
 		<module>05-jpa-with-spring</module>
 		<module>06-spring-rest-jpa</module>
 		<module>07-heroku</module>
+		<module>08-dynamic-web</module>
     </modules>
 
 	<dependencies>
