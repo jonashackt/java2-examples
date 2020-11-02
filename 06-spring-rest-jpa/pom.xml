@@ -13,7 +13,7 @@
     <artifactId>06-spring-rest-jpa</artifactId>
 
     <properties>
-        <springdoc-openapi.version>1.4.1</springdoc-openapi.version>
+        <springdoc-openapi.version>1.4.8</springdoc-openapi.version>
         <rest-assured.version>4.2.0</rest-assured.version>
     </properties>
 
