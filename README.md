@@ -1,6 +1,5 @@
-# java1-examples
+# java2-examples
 [![Build Status](https://github.com/jonashackt/java2-examples/workflows/java2-examples/badge.svg)](https://github.com/jonashackt/java2-examples/actions)
-[![Build Status](https://travis-ci.org/jonashackt/java2-examples.svg?branch=master)](https://travis-ci.org/jonashackt/java2-examples)
 [![renovateenabled](https://img.shields.io/badge/renovate-enabled-yellow)](https://renovatebot.com)
 
 Example code showing things from the lecture in "real life"
