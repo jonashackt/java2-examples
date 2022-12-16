@@ -13,7 +13,7 @@
     <artifactId>07-heroku</artifactId>
 
     <properties>
-        <springdoc-openapi.version>1.6.13</springdoc-openapi.version>
+        <springdoc-openapi.version>1.6.14</springdoc-openapi.version>
         <rest-assured.version>4.2.0</rest-assured.version>
     </properties>
 
